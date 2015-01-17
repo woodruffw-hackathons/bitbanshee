@@ -1,0 +1,3 @@
+[submodule "src/libbdiff"]
+	path = src/libbdiff
+	url = https://github.com/woodruffw/libbdiff
