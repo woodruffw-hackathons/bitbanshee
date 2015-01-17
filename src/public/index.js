@@ -1,6 +1,6 @@
-$('#browse').click(function(){
-	$('#uglybrowsebutton').click();
-});
+//$('#browse').click(function(){
+//	$('#uglybrowsebutton').click();
+//});
 
 function file_upload()
 {
