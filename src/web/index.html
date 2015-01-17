@@ -20,7 +20,7 @@
           <ul class="nav navbar-nav">
             <li class="active"><a href="index.html">Home</a></li>
             <li><a href="about.html">What are We?</a></li>
-            <li><a href="contact.html">The Dev Team</a></li> <!-- TODO Give credit -->
+            <li><a href="contact.html">The Dev Team</a></li>
           </ul>
         </div>
       </div>
@@ -45,18 +45,23 @@
         <p>Since you're shipping small diff files instead of huge binary blobs, the risk of any cohesive data leak is much lower. And they're incrypted with the same keys your normal updates are.</p>
       </div>
     </div>
+    <div class="container">
+    <div class="container">
     <!-- UPLOAD CODE GOES HERE -->
-    <form action="http://localhost:4040/bitflogger/post_file"
-enctype="multipart/form-data" method="post">
+    <form enctype="multipart/form-data" method="post">
     <p>Upload Test</p>
     <input type="file" name="datafile" size="40">
-    <input type="submit" value="Click this.">
+    <input id="submit" class="button" type="submit" value="Click this.">
     </form>
+    </div>
+    </div>
     <!-- Bootstrap core JavaScript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
     <script src="bootstrap.min.js"></script>
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="index.js"></script>
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
     <script src="ie10-viewport-bug-workaround.js"></script>
   </body>
