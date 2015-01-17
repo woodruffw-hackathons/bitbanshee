@@ -137,7 +137,19 @@ html input[disabled] {
   cursor: default;
 }
 
+.question
+{
+   text-align:center;
+   font-size: 200%;
+}
+
 .button-link {
+    width:200px;
+    text-align:center;
+    margin:auto;
+    clear:both;
+    display:block;
+    margin-top:2%;
     padding: 10px 15px;
     background: #4479BA;
     color: #FFF;
