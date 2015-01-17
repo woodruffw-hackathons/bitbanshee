@@ -6,6 +6,7 @@ function file_upload()
 {
 	$.ajax({
 		url: '/bitflogger/file-upload',
+		name: 'binaryfile';
 		type: 'POST',
 		contentType: 'application/json',
 		dataType: 'json'});
