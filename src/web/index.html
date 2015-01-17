@@ -45,6 +45,13 @@
         <p>Since you're shipping small diff files instead of huge binary blobs, the risk of any cohesive data leak is much lower. And they're incrypted with the same keys your normal updates are.</p>
       </div>
     </div>
+    <!-- UPLOAD CODE GOES HERE -->
+    <form action="http://localhost:4040/bitflogger/post_file"
+enctype="multipart/form-data" method="post">
+    <p>Upload Test</p>
+    <input type="file" name="datafile" size="40">
+    <input type="submit" value="Click this.">
+    </form>
     <!-- Bootstrap core JavaScript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
