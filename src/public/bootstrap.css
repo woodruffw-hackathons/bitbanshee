@@ -143,6 +143,12 @@ html input[disabled] {
    font-size: 200%;
 }
 
+.question2
+{
+   text-align:center;
+   font-size: 150%;
+}
+
 .btn-file {
     position: relative;
     overflow: hidden;
