@@ -1,0 +1,43 @@
+#!/usr/bin/env bash
+
+urlbase='http://localhost:4040/programs'
+
+case $1 in
+	"load" )
+	if [[ -f .ver ]]; then
+		echo "Directory already in use."
+		exit 1
+	else
+		echo $2 > .prog
+		echo $3 > .ver
+		curl "${urlbase}/${2}/${3}/${2}" -fo "${2}${3}"
+		chmod +x "${2}${3}"
+	fi
+	;;
+	"update" )
+	if [[ ! -f .ver ]] || [[ ! -f .prog ]]; then
+		echo "Uh oh."
+		exit 1
+	else
+		prog=$(cat .prog)
+		ver=$(cat .ver)
+		curl "${urlbase}/${prog}/${ver}/${2}.bdiff" -fo "${2}.bdiff"
+		../bdiff/bpatch "${prog}${ver}" "${2}.bdiff" "${prog}${2}"
+		chmod +x "${prog}${2}"
+		rm -rf "${prog}${ver}"
+		rm -rf "${2}.bdiff"
+		echo $2 > .ver
+	fi
+	;;
+	"clean" )
+	prog=$(cat .prog)
+	ver=$(cat .ver)
+	rm -rf "${prog}${ver}"
+	rm -rf .prog .ver 
+	;;
+
+	*)
+	echo "Not recognized."
+	exit 1
+	;;
+esac
