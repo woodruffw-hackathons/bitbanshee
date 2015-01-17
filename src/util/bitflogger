@@ -10,7 +10,7 @@ case $1 in
 	else
 		echo $2 > .prog
 		echo $3 > .ver
-		curl "${urlbase}/${2}/${3}/${2}" -fo "${2}${3}"
+		curl "${urlbase}/${2}/${3}/${2}" -sfo "${2}${3}"
 		chmod +x "${2}${3}"
 	fi
 	;;
@@ -21,7 +21,7 @@ case $1 in
 	else
 		prog=$(cat .prog)
 		ver=$(cat .ver)
-		curl "${urlbase}/${prog}/${ver}/${2}.bdiff" -fo "${2}.bdiff"
+		curl "${urlbase}/${prog}/${ver}/${2}.bdiff" -sfo "${2}.bdiff"
 		../bdiff/bpatch "${prog}${ver}" "${2}.bdiff" "${prog}${2}"
 		chmod +x "${prog}${2}"
 		rm -rf "${prog}${ver}"
