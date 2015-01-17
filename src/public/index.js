@@ -1,5 +1,5 @@
 $('#browse').click(function(){
-	(document.getElementById("uglybrowsebutton").onclick();
+	$('#uglybrowsebutton').click();
 });
 
 function file_upload()

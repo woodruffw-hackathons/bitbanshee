@@ -177,12 +177,12 @@ html input[disabled] {
 
 input[type="file"]
 {
-	display:none;
+	opacity:0;
 }
 
 .form-field
 {
-	display:none;
+	
 }
 
 button::-moz-focus-inner,
