@@ -50,7 +50,11 @@
     <!-- UPLOAD CODE GOES HERE -->
     <form enctype="multipart/form-data" method="post">
     <p class="question">Upload your own file and give it a shot!</p>
-    <input type="radio" name="types" value="nix">*NIX-Type Application<
+    <input type="radio" name="types" value="bsd">FreeBSD Executable</input>
+    <input type="radio" name="types" value="exe">Windows Executable</input>
+    <input type="radio" name="types" value="iso">Disk Image (*.dmg/*.iso)</input>
+    <input type="radio" name="types" value="elf">Linux Application</input>
+    <input type="radio" name="types" value="osx">OSX App</input>
     <input id="uglybrowsebutton" type="file" class="form-field" name="datafile" size="40">
     <div id = "browse" class="button button-link" value="Pick a file...">Pick a file...</div>
     <input id="submit" class="button button-link" type="submit" value="Upload">
