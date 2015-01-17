@@ -1,3 +1,7 @@
+$('#browse').click(function(){
+	(document.getElementById("uglybrowsebutton").onclick();
+});
+
 function file_upload()
 {
 	$.ajax({

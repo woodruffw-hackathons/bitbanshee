@@ -137,7 +137,18 @@ html input[disabled] {
   cursor: default;
 }
 
+.button-link {
+    padding: 10px 15px;
+    background: #4479BA;
+    color: #FFF;
+}
+
 .download
+{
+	display:none;
+}
+
+.form-field
 {
 	display:none;
 }
