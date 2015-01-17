@@ -6,7 +6,7 @@ function file_upload()
 {
 	$.ajax({
 		url: '/bitflogger/file-upload',
-		name: 'binaryfile';
+		name: 'binaryfile',
 		type: 'POST',
 		contentType: 'application/json',
 		dataType: 'json'});
@@ -19,7 +19,7 @@ $('#submit').click(function(e)
 	file_upload();	
 });
 
-socket.on('file-read', function()
-{
-	$('#download').show();
-});
+// socket.on('file-read', function()
+// {
+// 	$('#download').show();
+// });

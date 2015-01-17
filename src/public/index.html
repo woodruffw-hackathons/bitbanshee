@@ -9,12 +9,13 @@
     <title>BitFlogger - Get up to speed. Speedier.</title>
     <link href="centering_and_stuff.css" rel="stylesheet">
     <link href="bootstrap.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="sweet-alert.css">
   </head>
   <body>
     <nav class="navbar navbar-inverse navbar-fixed-top">
       <div class="container">
         <div class="navbar-header">
-          <a class="navbar-brand" href="#">BitFlogger</a> <!-- TODO Replace with image -->
+          <a class="navbar-brand" href="index.html">BitFlogger</a> <!-- TODO Replace with image -->
         </div>
         <div id="navbar" class="collapse navbar-collapse">
           <ul class="nav navbar-nav">
@@ -38,31 +39,24 @@
       </div>
       <div class="col-sm-4">
         <h3>Light</h3>
-        <p>Smaller updates means less bandwidth and less network traffic.</p>
+        <p>Smaller patch files mean faster updates, which means less bandwidth and less unnecessary traffic.</p>
       </div>
       <div class="col-sm-4">
         <h3>Secure</h3>
-        <p>Since you're shipping small diff files instead of huge binary blobs, the risk of any cohesive data leak is much lower. And they're encrypted with the same keys your normal updates are.</p>
+        <p>Since you're shipping small diff files instead of huge binary blobs, the risk of any cohesive data leak is much lower. And they're encrypted with the same keys as your normal updates. </p>
       </div>
     </div>
     <div class="container">
     <div class="container">
-    <!-- UPLOAD CODE GOES HERE -->
-    <form enctype="multipart/form-data" method="post">
-    <p class="question">Upload your own file and give it a shot!</p>
-    <p class="question2">Upload a full file and an update files to update, or 2 full files to get an update!</p>
-    <!--<input id="uglybrowsebutton" type="file" class="form-field" name="datafile" size="40"></input>-->
-    <span class="bigspan">
-    <span class="btn btn-primary btn-file button button-link">
-    Pick File #1<input type ="file" id = "browse" value="Pick a file..."/>
-    </span>
-    <span class="btn btn-primary btn-file button button-link">
-    Pick File #2<input type ="file" id = "browse" value="Pick another file..."/>
-    </span>
-    </span>
-    <input id="submit" class="button button-link" type="submit" value="Upload"></input>
-    </form> 
-    <input id="download" class="button button-link download" type="submit" value="Download">
+
+    <div align="center" class="container">
+      <form action="newpatch.html" style="display:inline;">
+        <button class="btn btn-primary button-link">Create A New Patch <br></button>
+      </form>
+      <form action="extant.html" style="display:inline;">
+        <button class="btn btn-primary button-link">Apply A Patch To An <br> Existing Program</button>
+      </form>
+    </div>
     </div>
     </div>
     <!-- Bootstrap core JavaScript
@@ -71,6 +65,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
     <script src="bootstrap.min.js"></script>
     <script src="/socket.io/socket.io.js"></script>
+    <script src="sweet-alert.min.js"></script>
     <script src="index.js"></script>
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
     <script src="ie10-viewport-bug-workaround.js"></script>
