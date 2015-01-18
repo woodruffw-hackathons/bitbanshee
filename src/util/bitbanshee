@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-#  bitflogger: a simple shell script that uses the bitflogger server schema
+#  bitbanshee: a simple shell script that uses the bitbanshee server schema
 #  to look up and retrieve diffs/patches for various binaries.
 #  Author: William Woodruff
 
