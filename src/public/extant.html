@@ -72,5 +72,13 @@
     <script src="index.js"></script>
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
     <script src="ie10-viewport-bug-workaround.js"></script>
+    <script>
+      var button = document.getElementById("submit");
+      var oldFile = document.getElementById("oldbin");
+      var newFile = document.getElementById("diffbin");
+      if(newFile && oldFile) {
+      button.disabled = false;
+      }
+    </script>
   </body>
 </html>
