@@ -3,6 +3,12 @@
 require "rubygems"
 require "sinatra"
 
-post '/form' do
-	puts params['file1'][:filename]
+post "/makebdiff" do
+	File.open('oldbin', "w") do |f|
+		f.write(params['file1'][:tempfile].read)
+	end
+	File.open('newbin', "w") do |f|
+		f.write(params['file2'][:tempfile].read)
+	end
+	return "Good."
 end
