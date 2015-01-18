@@ -12,5 +12,6 @@ run: all
 clean:
 	$(MAKE) clean -C ./src/libbdiff
 	$(MAKE) clean -C ./src/bdiff
+	rm -rf ./src/server/*bin
 
 .PHONY: all libbdiff clean
