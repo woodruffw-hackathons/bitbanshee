@@ -14,10 +14,26 @@
 .dev-name {
 	padding: 0 15px 0 15px;
 	text-align: left;
+	padding-bottom: 50px;
 }
 
-.dev-name2 {
+.dev-name {
 	padding: 0 15px 0 15px;
 	text-align: center;
+	padding: 50px;
+}
+
+.dev-name3 {
+	padding: 0 15px 0 15px;
+	text-align: center;
+}
+
+.dev-name4 {
+	padding: 0 15px 0 15px;
+	text-align: center;
+}
+
+.acknowledgement {
+	margin-top: 50px;
 }
 
