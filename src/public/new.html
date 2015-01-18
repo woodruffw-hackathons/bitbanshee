@@ -14,7 +14,7 @@
     <nav class="navbar navbar-inverse navbar-fixed-top">
       <div class="container">
         <div class="navbar-header">
-          <a class="navbar-brand" href="index.html">BitFlogger</a> <!-- TODO Replace with image -->
+          <a class="navbar-brand" href="#">BitFlogger</a> <!-- TODO Replace with image -->
         </div>
         <div id="navbar" class="collapse navbar-collapse">
           <ul class="nav navbar-nav">
@@ -38,24 +38,31 @@
       </div>
       <div class="col-sm-4">
         <h3>Light</h3>
-        <p>Smaller patch files mean faster updates, which means less bandwidth and less unnecessary traffic.</p>
+        <p>Smaller updates means less bandwidth and less network traffic.</p>
       </div>
       <div class="col-sm-4">
         <h3>Secure</h3>
-        <p>Since you're shipping small diff files instead of huge binary blobs, the risk of any cohesive data leak is much lower. And they're encrypted with the same keys as your normal updates. </p>
+        <p>Since you're shipping small diff files instead of huge binary blobs, the risk of any cohesive data leak is much lower. And they're encrypted with the same keys your normal updates are.</p>
       </div>
     </div>
     <div class="container">
     <div class="container">
-
-    <div align="center" class="container">
-      <form action ="./new.html" style="display:inline;">
-        <button class="btn btn-primary button-link">Create A New Patch <br></button>
-      </form>
-      <form action="./extant.html" style="display:inline;">
-        <button class="btn btn-primary button-link">Apply A Patch To An <br> Existing Program</button>
-      </form>
-    </div>
+    <!-- UPLOAD CODE GOES HERE -->
+    <form enctype="multipart/form-data" method="post">
+    <p class="question">Great! Upload your files here!</p>
+    <p class="question2">Please upload both the older and newer versions of your program and then hit "Upload"!</p>
+    <!--<input id="uglybrowsebutton" type="file" class="form-field" name="datafile" size="40"></input>-->
+    <span class="bigspan">
+    <span class="btn btn-primary btn-file button button-link">
+    Upload Old Program<input type ="file" id = "browse" value="Pick a file..."/>
+    </span>
+    <span class="btn btn-primary btn-file button button-link">
+    Upload New Program<input type ="file" id = "browse" value="Pick another file..."/>
+    </span>
+    </span>
+    <input id="submit" class="button button-link" type="submit" value="Upload"></input>
+    </form> 
+    <input id="download" class="button button-link download" type="submit" value="Download">
     </div>
     </div>
     <!-- Bootstrap core JavaScript
