@@ -48,16 +48,16 @@
     <div class="container">
     <div class="container">
     <!-- UPLOAD CODE GOES HERE -->
-    <form enctype="multipart/form-data" method="post">
+    <form action="http://localhost:8080/dopatch" enctype="multipart/form-data" method="post">
     <p class="question">Great! Upload your files here!</p>
     <p class="question2">Please upload your existing program and your patch and then hit "Upload"!</p>
     <!--<input id="uglybrowsebutton" type="file" class="form-field" name="datafile" size="40"></input>-->
     <p class="bigspan">
     <span class="btn btn-primary btn-file button button-link">
-    Upload Program<input type ="file" id = "browse" value="Pick a file..."/>
+    Upload Program<input name="oldbin" type ="file" id = "browse" value="Pick a file..."/>
     </span>
     <span class="btn btn-primary btn-file button button-link">
-    Upload Patch<input type ="file" id = "browse" value="Pick another file..."/>
+    Upload Patch<input name="diffbin" type ="file" id = "browse" value="Pick another file..."/>
     </span>
     </p>
     <input id="submit" class="button button-link" type="submit" value="Upload"></input>
