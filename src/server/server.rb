@@ -11,7 +11,10 @@ post "/makebdiff" do
 		f.write(params['newbin'][:tempfile].read)
 	end
 	system("../bdiff/bdiff oldbin newbin diffbin")
-	return File.open('diffbin').read
+	content_type 'application/octet-stream'
+	stream do |out|
+		out << File.open('diffbin').read
+	end
 end
 
 post "/dopatch" do
@@ -22,5 +25,8 @@ post "/dopatch" do
 		f.write(params['diffbin'][:tempfile].read)
 	end
 	system("../bdiff/bpatch oldbin diffbin newbin")
-	return File.open('newbin').read
+	content_type 'application/octet-stream'
+	stream do |out|
+		out << File.open('newbin').read
+	end
 end
