@@ -1,5 +1,10 @@
 #!/usr/bin/env ruby
 
+#  server.rb
+#  A Sinatra server that responds to POST requests containing either binaries 
+#  to be diffed or patched depending on the endpoint.
+#  Author: William Woodruff
+
 require "rubygems"
 require "sinatra"
 

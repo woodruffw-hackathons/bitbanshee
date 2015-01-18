@@ -1,6 +1,10 @@
 #!/usr/bin/env bash
 
-urlbase='http://localhost:4040/programs'
+#  bitbanshee: a simple shell script that uses the bitbanshee server schema
+#  to look up and retrieve diffs/patches for various binaries.
+#  Author: William Woodruff
+
+urlbase='http://localhost:8080/programs'
 
 case $1 in
 	"load" )
