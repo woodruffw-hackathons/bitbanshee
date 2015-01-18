@@ -3202,6 +3202,12 @@ fieldset[disabled] .btn-primary.active {
   background-color: #5cb85c;
   border-color: #4cae4c;
 }
+#newbutton{
+  line-height: 2.4;
+}
+#existing{
+  line-height: 1.2;
+}
 .btn-success:hover,
 .btn-success:focus,
 .btn-success.focus,
