@@ -1,14 +1,23 @@
-body {
-  padding-top: 50px;
-}
-
 .introduction {
   padding: 40px 15px;
   text-align: center;
 }
 
-li {
-    list-style-type: none;
+.dev-team {
+	width: 100%;
 }
 
+.dev {
+	text-align: center;
+}
+
+.dev-name {
+	padding: 0 15px 0 15px;
+	text-align: left;
+}
+
+.dev-name2 {
+	padding: 0 15px 0 15px;
+	text-align: center;
+}
 
