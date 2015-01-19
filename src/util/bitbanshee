@@ -4,7 +4,7 @@
 #  to look up and retrieve diffs/patches for various binaries.
 #  Author: William Woodruff
 
-urlbase='http://localhost:8080/programs'
+urlbase='http://localhost:4040/programs'
 
 case $1 in
 	"load" )
